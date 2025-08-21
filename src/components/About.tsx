@@ -1,5 +1,7 @@
 import React from "react";
 import { Award, Users, Zap, Globe } from "lucide-react";
+import PromptImage from "../Images/Prompt.png";
+
 
 const About: React.FC = () => {
   const achievements = [
@@ -79,7 +81,7 @@ const About: React.FC = () => {
           {/* Banner Image */}
           <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl">
             <img
-              src="/Images/Prompt.png"
+              src={PromptImage}
               alt="Aleem.Developer - AI Expert and Prompt Engineer"
                 className="w-full max-h-[600px] rounded-3xl transition-transform duration-500 hover:scale-105"
 
