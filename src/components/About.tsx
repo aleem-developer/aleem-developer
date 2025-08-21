@@ -79,7 +79,7 @@ const About: React.FC = () => {
           {/* Banner Image */}
           <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl">
             <img
-              src="/Images/prompt.png"
+              src="/Images/Prompt.png"
               alt="Aleem.Developer - AI Expert and Prompt Engineer"
                 className="w-full max-h-[600px] rounded-3xl transition-transform duration-500 hover:scale-105"
 
