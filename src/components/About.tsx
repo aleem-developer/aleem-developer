@@ -1,6 +1,6 @@
 import React from "react";
 import { Award, Users, Zap, Globe } from "lucide-react";
-import PromptImage from "../Images/Prompt.png";
+import PromptImage from "/Images/Prompt.png";
 
 const About: React.FC = () => {
   const achievements = [
