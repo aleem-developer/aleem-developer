@@ -8,10 +8,10 @@ const Footer: React.FC = () => {
 
   const footerLinks = {
     services: [
-      { name: 'Prompt Engineering', href: '#services' },
-      { name: 'AI Workflows', href: '#services' },
-      { name: 'Multi-Agent Systems', href: '#services' },
-      { name: 'AI Consulting', href: '#services' }
+      { name: 'Full-Stack AI Applications', href: '#services' },
+      { name: 'Prompt & LLM Optimization', href: '#services' },
+      { name: 'AI & Business Automation', href: '#services' },
+      { name: 'AI & Web Consulting', href: '#services' }
     ],
     company: [
       { name: 'About', href: '#about' },
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-950 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="py-2">
@@ -77,8 +77,8 @@ const Footer: React.FC = () => {
               </div>
               
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                Transforming businesses with cutting-edge AI solutions. Expert in prompt engineering, 
-                multi-agent systems, and intelligent workflow automation serving 5,000+ clients globally.
+               Transforming businesses with cutting-edge AI & Web solutions — Expert in Prompt Engineering,
+                Python , Automation and Full-Stack Development, trusted by 20+ clients globally.
               </p>
 
               {/* Contact Info */}
@@ -120,7 +120,7 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Footer Links */}
-            <div className="grid grid-cols-1 text-center sm:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 text-center sm:grid-cols-3 gap-7">
               <div>
                 <h3 className="font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent text-lg mb-4">Services</h3>
                 <ul className="space-y-3">
