@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
   ];
 
   return (
-    <section id="contact" className="py-10 bg-white dark:bg-gray-900">
+    <section id="contact" className="py-10 bg-gray-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
