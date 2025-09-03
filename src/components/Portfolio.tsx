@@ -1,107 +1,77 @@
-import React, { useState } from 'react';
-import { ExternalLink, Github, Filter, Zap, Brain, Users, BarChart } from 'lucide-react';
+import { useState } from 'react';
+import { Filter, Zap, Brain, Users, BarChart, Trophy, ArrowUpCircle, Clock, CheckCircle, Code, Lightbulb } from 'lucide-react';
 
-const Portfolio: React.FC = () => {
+const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('all');
 
   const categories = [
-    { id: 'all', name: 'All Projects', icon: <Filter className="w-4 h-4" /> },
-    { id: 'prompt', name: 'Prompt Engineering', icon: <Brain className="w-4 h-4" /> },
-    { id: 'workflow', name: 'AI Workflows', icon: <Zap className="w-4 h-4" /> },
-    { id: 'multi-agent', name: 'Multi-Agent Systems', icon: <Users className="w-4 h-4" /> },
-    { id: 'analytics', name: 'AI Analytics', icon: <BarChart className="w-4 h-4" /> }
+    { id: 'all', name: 'All Projects', icon: <Filter className="w-4 h-4 mr-2" /> },
+    { id: 'prompt', name: 'Prompt Engineering', icon: <Brain className="w-4 h-4 mr-2" /> },
+    { id: 'workflow', name: 'AI Workflows', icon: <Zap className="w-4 h-4 mr-2" /> },
+    { id: 'multi-agent', name: 'Multi-Agent Systems', icon: <Users className="w-4 h-4 mr-2" /> },
+    { id: 'analytics', name: 'AI Analytics', icon: <BarChart className="w-4 h-4 mr-2" /> }
   ];
 
   const projects = [
     {
       id: 1,
       title: "Enterprise Customer Service AI",
-      description: "Advanced multi-agent system handling 50,000+ customer inquiries daily with 98% satisfaction rate.",
-      image: "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "multi-agent",
-      technologies: ["GPT-4", "Multi-Agent Systems", "NLP", "Python"],
-      metrics: {
-        impact: "98% satisfaction rate",
-        scale: "50,000+ daily inquiries",
-        efficiency: "70% cost reduction"
+      technologies: ["GPT-4", "Multi-Agent Systems", "Python", "React"],
+      image: "https://images.unsplash.com/photo-1516110992765-e11189417c0a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2V8ZW58MHx8MHx8fDA%3D",
+      challenge: "Manual customer support processes were slow, inconsistent, and costly, leading to long wait times and low customer satisfaction.",
+      solution: "Developed an advanced multi-agent system where a triage agent, a knowledge base agent, and a resolution agent collaborate to handle inquiries autonomously.",
+      results: {
+        impact: { label: "Satisfaction Rate", value: "98%", icon: <Trophy className="w-5 h-5 text-emerald-400" /> },
+        scale: { label: "Daily Inquiries", value: "50,000+", icon: <Users className="w-5 h-5 text-blue-400" /> },
+        efficiency: { label: "Cost Reduction", value: "70%", icon: <ArrowUpCircle className="w-5 h-5 text-purple-400" /> }
       },
       link: "#",
-      github: "#"
     },
     {
       id: 2,
       title: "Legal Document Analysis Platform",
-      description: "Sophisticated prompt engineering solution for automated legal document analysis and contract review.",
-      image: "https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=800",
       category: "prompt",
-      technologies: ["Claude", "Prompt Engineering", "RAG", "LangChain"],
-      metrics: {
-        impact: "95% accuracy",
-        scale: "10,000+ documents",
-        efficiency: "80% time savings"
+      technologies: ["LLMs", "Prompt Engineering", "RAG", "Next.js"],
+      image: "https://images.unsplash.com/photo-1549495146-5e58980b188c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YWklMjB0ZWNobm9sb2d5fGVufDB8fDB8fHww",
+      challenge: "Reviewing thousands of legal documents and contracts manually was time-intensive and prone to human error, creating significant legal risk.",
+      solution: "Engineered a sophisticated prompt-chaining system using advanced Retrieval-Augmented Generation (RAG) to automate contract review, clause extraction, and compliance checks.",
+      results: {
+        impact: { label: "Accuracy", value: "95%", icon: <CheckCircle className="w-5 h-5 text-emerald-400" /> },
+        scale: { label: "Documents Processed", value: "10,000+", icon: <Code className="w-5 h-5 text-blue-400" /> },
+        efficiency: { label: "Time Savings", value: "80%", icon: <Clock className="w-5 h-5 text-purple-400" /> }
       },
       link: "#",
-      github: "#"
     },
     {
       id: 3,
-      title: "Healthcare Diagnostic Assistant",
-      description: "AI workflow system assisting medical professionals with diagnostic support and patient data analysis.",
-      image: "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "workflow",
-      technologies: ["Medical AI", "Workflow Automation", "HIPAA Compliant", "TensorFlow"],
-      metrics: {
-        impact: "92% diagnostic accuracy",
-        scale: "5,000+ patients",
-        efficiency: "60% faster diagnosis"
+      title: "Financial Trading Analytics",
+      category: "analytics",
+      technologies: ["LLMs", "Data Automation", "Python", "React"],
+      image: "https://images.unsplash.com/photo-1518556538356-02e74244f777?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFpX2FuYWx5dGljc3xlbnwwfHwwfHx8MA%3D%3D",
+      challenge: "Traders needed real-time market insights and risk assessment, but traditional analytics platforms were slow and lacked predictive capabilities.",
+      solution: "Built a real-time AI analytics platform that processes millions of data points, identifies market trends, and provides predictive risk analysis using LLMs for natural language queries.",
+      results: {
+        impact: { label: "ROI Increase", value: "25%", icon: <Trophy className="w-5 h-5 text-emerald-400" /> },
+        scale: { label: "Data Points", value: "1M+", icon: <BarChart className="w-5 h-5 text-blue-400" /> },
+        efficiency: { label: "Processing Speed", value: "Real-time", icon: <Zap className="w-5 h-5 text-purple-400" /> }
       },
       link: "#",
-      github: "#"
     },
     {
       id: 4,
-      title: "Financial Trading Analytics",
-      description: "Real-time AI analytics platform for market analysis, risk assessment, and trading strategy optimization.",
-      image: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "analytics",
-      technologies: ["Machine Learning", "Real-time Analytics", "PyTorch", "Cloud Computing"],
-      metrics: {
-        impact: "25% ROI increase",
-        scale: "1M+ data points",
-        efficiency: "Real-time processing"
+      title: "Automated Supply Chain Optimization",
+      category: "workflow",
+      technologies: ["AI Workflows", "Python", "Automation"],
+      image: "https://images.unsplash.com/photo-1518556538356-02e74244f777?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHN1cHBseSUyMGNoYWluJTIwYW5hbHl0aWNzfGVufDB8fDB8fHww",
+      challenge: "Inefficient and manual supply chain management led to bottlenecks, inventory surpluses, and delayed deliveries, impacting profitability.",
+      solution: "Created an intelligent workflow automation system that uses predictive analytics to optimize inventory, forecast demand, and automate order processing across global operations.",
+      results: {
+        impact: { label: "Cost Reduction", value: "30%", icon: <ArrowUpCircle className="w-5 h-5 text-emerald-400" /> },
+        scale: { label: "Global Operations", value: "24/7", icon: <Clock className="w-5 h-5 text-blue-400" /> },
+        efficiency: { label: "Error Rate", value: "Reduced by 85%", icon: <CheckCircle className="w-5 h-5 text-purple-400" /> }
       },
       link: "#",
-      github: "#"
-    },
-    {
-      id: 5,
-      title: "Educational Content Generator",
-      description: "Intelligent system generating personalized educational content using advanced prompt engineering techniques.",
-      image: "https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "prompt",
-      technologies: ["GPT-4", "Educational AI", "Content Generation", "API Integration"],
-      metrics: {
-        impact: "40% better engagement",
-        scale: "100,000+ students",
-        efficiency: "90% automation rate"
-      },
-      link: "#",
-      github: "#"
-    },
-    {
-      id: 6,
-      title: "Supply Chain Optimization",
-      description: "Multi-agent system optimizing global supply chain operations with predictive analytics and automation.",
-      image: "https://images.pexels.com/photos/4481327/pexels-photo-4481327.jpeg?auto=compress&cs=tinysrgb&w=800",
-      category: "multi-agent",
-      technologies: ["Multi-Agent Systems", "Predictive Analytics", "IoT Integration", "Blockchain"],
-      metrics: {
-        impact: "30% cost reduction",
-        scale: "Global operations",
-        efficiency: "24/7 monitoring"
-      },
-      link: "#",
-      github: "#"
     }
   ];
 
@@ -110,29 +80,29 @@ const Portfolio: React.FC = () => {
     : projects.filter(project => project.category === activeFilter);
 
   return (
-    <section id="portfolio" className="py-20 mt-5 bg-gray-50 dark:bg-gray-800">
+    <section id="portfolio" className="py-5 lg:py-5 font-inter bg-gray-950 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Featured <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Projects</span>
+        <div className="text-center mb-10">
+          <h2 className="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight">
+            Case Studies in <span className="bg-gradient-to-r from-sky-500 to-fuchsia-500 bg-clip-text text-transparent">AI & Web Innovation</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Showcasing transformative AI solutions that have driven measurable results 
-            for clients across industries worldwide.
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            A showcase of transformative solutions that delivered measurable results for forward-thinking clients.
           </p>
         </div>
 
         {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
           {categories.map((category) => (
             <button
               key={category.id}
               onClick={() => setActiveFilter(category.id)}
               className={`inline-flex items-center px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                 activeFilter === category.id
-                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
-                  : 'bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 shadow-md hover:shadow-lg'
+                  ? 'bg-gradient-to-r from-sky-500 to-fuchsia-500 text-white shadow-lg'
+                  : 'bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white'
               }`}
             >
               {category.icon}
@@ -142,106 +112,74 @@ const Portfolio: React.FC = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-10">
           {filteredProjects.map((project, index) => (
             <div
               key={project.id}
-              className="group bg-white dark:bg-gray-900 rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+              className="group rounded-3xl overflow-hidden border border-gray-800 bg-gray-900 shadow-2xl transition-all duration-300 hover:border-gray-600 relative"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Project Image */}
-              <div className="relative overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
-                {/* Project Links */}
-                <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a
-                    href={project.link}
-                    className="p-2 bg-white/90 backdrop-blur-sm rounded-full text-gray-700 hover:text-blue-600 transition-colors"
-                    aria-label="View project"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
-                  <a
-                    href={project.github}
-                    className="p-2 bg-white/90 backdrop-blur-sm rounded-full text-gray-700 hover:text-gray-900 transition-colors"
-                    aria-label="View source code"
-                  >
-                    <Github className="w-4 h-4" />
-                  </a>
-                </div>
-              </div>
-
-              {/* Project Content */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                  {project.title}
+              {/* Card Header with Glassmorphism and Background Image */}
+              <div 
+                className="relative h-60 flex items-end p-8 bg-cover bg-center"
+                style={{ backgroundImage: `url(${project.image})` }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div className="absolute inset-0 bg-black/50 backdrop-blur-lg"></div>
+                <h3 className="relative z-10 text-3xl font-bold leading-tight">
+                  <span className="bg-gradient-to-r from-sky-300 to-fuchsia-300 bg-clip-text text-transparent">{project.title}</span>
                 </h3>
-                
-                <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
-                  {project.description}
-                </p>
-
-                {/* Technologies */}
-                <div className="flex flex-wrap gap-2 mb-4">
+              </div>
+              
+              {/* Project Content */}
+              <div className="p-8 z-10">
+                <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-xs font-medium rounded-full"
+                      className="px-3 py-1 bg-white/10 text-white text-xs font-medium rounded-full backdrop-blur-sm"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
+                
+                <div className="space-y-8">
+                  {/* Challenge */}
+                  <div>
+                    <h4 className="flex items-center text-lg font-semibold mb-2 text-sky-400">
+                      <Zap className="w-5 h-5 mr-2" />
+                      The Challenge
+                    </h4>
+                    <p className="text-gray-300">{project.challenge}</p>
+                  </div>
 
-                {/* Metrics */}
-                <div className="border-t border-gray-200 dark:border-gray-700 pt-4">
-                  <div className="grid grid-cols-1 gap-2 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-gray-500 dark:text-gray-400">Impact:</span>
-                      <span className="font-medium text-emerald-600 dark:text-emerald-400">{project.metrics.impact}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-500 dark:text-gray-400">Scale:</span>
-                      <span className="font-medium text-blue-600 dark:text-blue-400">{project.metrics.scale}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-500 dark:text-gray-400">Efficiency:</span>
-                      <span className="font-medium text-purple-600 dark:text-purple-400">{project.metrics.efficiency}</span>
-                    </div>
+                  {/* Solution */}
+                  <div>
+                    <h4 className="flex items-center text-lg font-semibold mb-2 text-fuchsia-400">
+                      <Lightbulb className="w-5 h-5 mr-2" />
+                      The Solution
+                    </h4>
+                    <p className="text-gray-300">{project.solution}</p>
                   </div>
                 </div>
+
+                {/* Metrics */}
+                <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-gray-700 pt-6">
+                  {Object.values(project.results).map((result, resultIndex) => (
+                    <div key={resultIndex} className="flex flex-col items-start">
+                      <div className="flex items-center text-xl font-bold text-white mb-1">
+                        {result.icon}
+                        <span className="ml-2">{result.value}</span>
+                      </div>
+                      <span className="text-gray-400 text-sm font-medium">{result.label}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
+
             </div>
           ))}
-        </div>
-
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 lg:p-12 text-white">
-            <h3 className="text-3xl font-bold mb-4">
-              Ready to See Your Project Here?
-            </h3>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Let's collaborate to create innovative AI solutions that transform your business 
-              and deliver exceptional results.
-            </p>
-            <button
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-full shadow-lg hover:shadow-xl hover:bg-gray-100 transform hover:-translate-y-1 transition-all duration-300"
-            >
-              Start Your Project
-              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </button>
-          </div>
         </div>
       </div>
     </section>
