@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aleem.Developer - Top AI Prompt Engineer & Workflow Architect</title>
     <meta name="description" content="World-class prompt engineering and AI workflow architect with 5,000+ successful projects. Expert in multi-agent systems, LLM optimization, and cutting-edge AI solutions." />
-    <title>Aleem Developer | Prompt Engineer & AI Innovator</title>
-    <meta name="description" content="Aleem.Developer - Top Prompt Engineer from Pakistan. I design advanced AI workflows, LLM orchestration systems, and futuristic UIs.">
     <meta name="keywords" content="Aleem Developer, Prompt Engineer, AI Pakistan, LLM, AI Innovator, Portfolio">
     <meta name="author" content="Muhammad Aleem Naveed">
     <meta property="og:title" content="Aleem.Developer | Prompt Engineer">
@@ -15,107 +13,118 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yourdomain.com">
 
-    <!-- Favicon and App Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#3B82F6" />
-    
-    <!-- Preconnect to external domains for performance -->
+    <!-- Preconnect & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://images.pexels.com" />
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    
-    <!-- Robots and Canonical -->
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://aleem.developer" />
-    
-    <!-- Additional Meta Tags for SEO -->
-    <meta name="author" content="Aleem.Developer" />
-    <meta name="keywords" content="prompt engineering, AI workflow architect, multi-agent systems, artificial intelligence expert, LLM optimization, AI consultant, machine learning specialist, AI automation" />
-    <meta name="geo.region" content="US" />
-    <meta name="geo.placename" content="Global Remote" />
-    <meta name="language" content="EN" />
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
     <style>
-      /* Critical CSS for immediate loading */
       body {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-family: 'Inter', sans-serif;
         margin: 0;
         padding: 0;
         line-height: 1.5;
       }
-      
-      /* Loading animation */
+
+      /* 🔥 Futuristic Loader */
       .loading-screen {
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: radial-gradient(circle at center, #1e1e2f, #0d0d16);
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         z-index: 9999;
-        opacity: 1;
-        transition: opacity 0.5s ease;
+        transition: opacity 0.6s ease;
       }
-      
-      .loading-screen.fade-out {
-        opacity: 0;
+      .loading-screen.fade-out { opacity: 0; pointer-events: none; }
+
+      .orb {
+        width: 90px; height: 90px;
+        border-radius: 50%;
+        background: conic-gradient(#3B82F6, #8B5CF6, #06b6d4, #3B82F6);
+        animation: spin 3.5s linear infinite, pulse 2s ease-in-out infinite;
+        box-shadow: 0 0 35px rgba(139, 92, 246, 0.9), 0 0 80px rgba(59, 130, 246, 0.6);
+        position: relative;
+      }
+
+      /* Orbiting rings */
+      .orb::before, .orb::after {
+        content: "";
+        position: absolute;
+        border: 2px solid rgba(59, 130, 246, 0.7);
+        border-radius: 50%;
+        width: 140px; height: 140px;
+        top: -25px; left: -25px;
+        animation: orbit 6s linear infinite;
+      }
+      .orb::after {
+        width: 180px; height: 180px;
+        top: -45px; left: -45px;
+        border-color: rgba(139, 92, 246, 0.5);
+        animation: orbit 8s linear infinite reverse;
+      }
+
+      /* Particles */
+      .particles {
+        position: absolute;
+        width: 100%; height: 100%;
+        top: 0; left: 0;
+        overflow: hidden;
         pointer-events: none;
       }
-      
-      .loading-spinner {
-        width: 50px;
-        height: 50px;
-        border: 3px solid rgba(255, 255, 255, 0.3);
+      .particle {
+        position: absolute;
+        width: 6px; height: 6px;
+        background: #06b6d4;
         border-radius: 50%;
-        border-top-color: white;
-        animation: spin 1s ease-in-out infinite;
+        animation: floatUp 4s linear infinite;
+        opacity: 0.7;
       }
-      
-      @keyframes spin {
-        to { transform: rotate(360deg); }
+      .particle:nth-child(2) { left: 30%; animation-duration: 5s; background: #8B5CF6; }
+      .particle:nth-child(3) { left: 70%; animation-duration: 6s; background: #3B82F6; }
+      .particle:nth-child(4) { left: 50%; animation-duration: 4.5s; background: #22d3ee; }
+
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); box-shadow: 0 0 35px rgba(139, 92, 246, 0.9); }
+        50% { transform: scale(1.15); box-shadow: 0 0 80px rgba(59, 130, 246, 1); }
+      }
+      @keyframes orbit { to { transform: rotate(360deg); } }
+      @keyframes floatUp {
+        0% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+        20% { opacity: 1; }
+        100% { transform: translateY(-20px) scale(1); opacity: 0; }
       }
     </style>
   </head>
   <body>
-    <!-- Loading Screen -->
+    <!-- Loader -->
     <div id="loading-screen" class="loading-screen">
-      <div class="loading-spinner"></div>
+      <div class="orb"></div>
+      <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
     </div>
-    
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    
-    <!-- Remove loading screen after app loads -->
+
     <script>
-      window.addEventListener('load', function() {
-        setTimeout(function() {
-          const loadingScreen = document.getElementById('loading-screen');
-          if (loadingScreen) {
-            loadingScreen.classList.add('fade-out');
-            setTimeout(function() {
-              loadingScreen.remove();
-            }, 500);
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          const screen = document.getElementById('loading-screen');
+          if (screen) {
+            screen.classList.add('fade-out');
+            setTimeout(() => screen.remove(), 600);
           }
-        }, 1000);
+        }, 1000); // keep loader ~1s
       });
-    </script>
-    
-    <!-- Google Analytics (replace with actual tracking ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID');
     </script>
   </body>
 </html>
