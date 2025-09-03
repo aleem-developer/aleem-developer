@@ -1,115 +1,120 @@
-import React from 'react';
-import { Brain, Workflow, Users, Lightbulb, Zap, Settings, Code, BarChart } from 'lucide-react';
+import { Brain, Lightbulb, Zap, Settings, Code, Layers, Dna, Rocket } from 'lucide-react';
 
-const Services: React.FC = () => {
+const Services = () => {
+  // Main services, reframed for client-focused benefits
   const services = [
     {
+      icon: <Layers className="w-12 h-12" />,
+      title: "Full-Stack AI-Powered Applications",
+      description: "Build robust, scalable, and intelligent web applications from the ground up. Combining cutting-edge AI models with modern full-stack frameworks to create powerful, user-centric solutions.",
+      features: ["Custom web app development (React/Next.js)", "Backend API integration (Python)", "Database architecture", "DevOps & deployment"],
+      color: "from-sky-500 to-indigo-600"
+    },
+    {
       icon: <Brain className="w-12 h-12" />,
-      title: "Advanced Prompt Engineering",
-      description: "Optimize LLM performance with sophisticated prompt design, chain-of-thought reasoning, and context engineering for maximum output quality.",
-      features: ["Custom prompt optimization", "Multi-turn conversations", "Context engineering", "Performance analytics"],
-      color: "from-blue-600 to-blue-800"
+      title: "Strategic Prompt & LLM Optimization",
+      description: "Don't just use AI—master it. I'll fine-tune your prompts and integrate advanced techniques to ensure your large language models deliver predictable, high-quality, and cost-effective outputs.",
+      features: ["Sophisticated prompt design", "Context & state engineering", "Chain-of-thought prompting", "Performance tuning"],
+      color: "from-fuchsia-500 to-pink-600"
     },
     {
-      icon: <Workflow className="w-12 h-12" />,
-      title: "AI Workflow Architecture",
-      description: "Design and implement intelligent automation systems that streamline complex business processes using cutting-edge AI technologies.",
-      features: ["Process automation", "Workflow optimization", "Integration planning", "Performance monitoring"],
-      color: "from-purple-600 to-purple-800"
-    },
-    {
-      icon: <Users className="w-12 h-12" />,
-      title: "Multi-Agent Systems",
-      description: "Create sophisticated AI ecosystems where multiple intelligent agents collaborate to solve complex problems and automate workflows.",
-      features: ["Agent coordination", "Task distribution", "System orchestration", "Scalability planning"],
-      color: "from-emerald-600 to-emerald-800"
+      icon: <Dna className="w-12 h-12" />,
+      title: "AI & Business Automation",
+      description: "Automate complex, repetitive tasks and streamline your workflows. From simple scripts to multi-agent AI systems, I create intelligent back-end solutions that save time, reduce errors, and increase efficiency.",
+      features: ["Custom automation scripts", "Multi-agent orchestration", "API integrations", "Workflow mapping"],
+      color: "from-emerald-500 to-teal-600"
     },
     {
       icon: <Lightbulb className="w-12 h-12" />,
-      title: "AI Strategy Consulting",
-      description: "Comprehensive AI transformation guidance, from initial assessment to implementation strategy and team training.",
-      features: ["AI readiness assessment", "Implementation roadmap", "Team training", "ROI optimization"],
-      color: "from-orange-600 to-orange-800"
+      title: "AI & Web Transformation Consulting",
+      description: "Get a clear roadmap for your digital future. I provide strategic guidance to help you identify high-impact opportunities for AI and web technologies, ensuring a seamless and profitable transition.",
+      features: ["AI readiness assessment", "Technology stack selection", "Implementation strategy", "ROI analysis"],
+      color: "from-orange-500 to-yellow-600"
     }
   ];
 
+  // Technical specializations, highlighting your specific skills
   const specializations = [
     {
+      icon: <Code className="w-8 h-8" />,
+      title: "Python Web Dev",
+      description: "Powerful and scalable back-ends."
+    },
+    {
       icon: <Zap className="w-8 h-8" />,
-      title: "LLM Optimization",
-      description: "Fine-tune large language models for specific use cases"
+      title: "React & Next.js",
+      description: "Fast and dynamic front-ends."
     },
     {
       icon: <Settings className="w-8 h-8" />,
-      title: "Custom AI Solutions",
-      description: "Tailor-made AI systems for unique business requirements"
+      title: "TailwindCSS",
+      description: "Modern, rapid UI development."
     },
     {
-      icon: <Code className="w-8 h-8" />,
-      title: "AI Integration",
-      description: "Seamless integration of AI tools into existing workflows"
-    },
-    {
-      icon: <BarChart className="w-8 h-8" />,
-      title: "Performance Analytics",
-      description: "Comprehensive monitoring and optimization of AI systems"
+      icon: <Brain className="w-8 h-8" />,
+      title: "LLMs & Automation",
+      description: "Intelligent, autonomous systems."
     }
   ];
 
   return (
-    <section id="services" className=" bg-white dark:bg-gray-900">
+    <section id="services" className="bg-gray-950 text-white py-10 lg:py-10 font-inter">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Expert <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">AI Services</span>
+          <h2 className="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight">
+            Comprehensive <span className="bg-gradient-to-r from-sky-500 to-fuchsia-500 bg-clip-text text-transparent">AI & Web Solutions</span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Comprehensive AI solutions designed to transform your business operations, 
-            enhance productivity, and unlock the full potential of artificial intelligence.
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            I build more than just websites and prompts; I engineer strategic solutions that drive tangible business growth and unlock new levels of efficiency.
           </p>
         </div>
 
         {/* Main Services Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-gray-50 dark:bg-gray-800 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+              className="group bg-gray-900 rounded-3xl p-8 border border-gray-800 hover:border-sky-500 transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden shadow-xl"
             >
-              <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-r ${service.color} text-white mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                {service.icon}
+              {/* Subtle background gradient for effect */}
+              <div className={`absolute inset-0 z-0 opacity-10 blur-xl group-hover:opacity-30 transition-opacity duration-500 bg-gradient-to-r ${service.color}`}></div>
+              
+              <div className="relative z-10">
+                <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-r ${service.color} text-white mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  {service.icon}
+                </div>
+                
+                <h3 className="text-3xl font-bold mb-4">
+                  {service.title}
+                </h3>
+                
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  {service.description}
+                </p>
+                
+                <ul className="space-y-2">
+                  {service.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-center text-gray-400">
+                      <Rocket className="w-4 h-4 text-sky-400 mr-3 animate-pulse" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                {service.title}
-              </h3>
-              
-              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                {service.description}
-              </p>
-              
-              <ul className="space-y-2">
-                {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-gray-700 dark:text-gray-300">
-                    <div className="w-2 h-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mr-3"></div>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-              
             </div>
           ))}
         </div>
 
-        {/* Specializations */}
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 lg:p-12 text-white">
+        {/* Specializations & Tech Stack */}
+        <div className="bg-gray-900 rounded-3xl p-8 lg:p-12 border border-gray-800">
           <div className="text-center mb-12">
             <h3 className="text-3xl lg:text-4xl font-bold mb-4">
-              Technical Specializations
+              Core Technical Specializations
             </h3>
-            <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-              Deep expertise across the AI technology stack, ensuring comprehensive solutions for any challenge.
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              I leverage a focused stack of industry-leading technologies to deliver robust and future-proof solutions.
             </p>
           </div>
           
@@ -117,32 +122,32 @@ const Services: React.FC = () => {
             {specializations.map((spec, index) => (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center hover:bg-white/20 transition-colors duration-300"
+                className="bg-gray-800 rounded-2xl p-6 text-center hover:bg-gray-700 transition-colors duration-300 transform hover:-translate-y-1"
               >
                 <div className="text-white mb-4 flex justify-center">
                   {spec.icon}
                 </div>
-                <h4 className="text-lg font-semibold mb-2">{spec.title}</h4>
-                <p className="text-blue-100 text-sm">{spec.description}</p>
+                <h4 className="text-xl font-semibold mb-2">{spec.title}</h4>
+                <p className="text-gray-400 text-sm">{spec.description}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-3xl p-8 lg:p-12">
-            <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Ready to Transform Your Business with AI?
+        <div className="text-center mt-20">
+          <div className="bg-gray-900 rounded-3xl p-8 lg:p-12 border border-gray-800">
+            <h3 className="text-3xl sm:text-4xl font-bold mb-4">
+              Ready to Build the Future?
             </h3>
-            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              Let's discuss your AI needs and create a custom solution that drives real results for your organization.
+            <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              Whether you need to automate a process or build a full-scale AI application, let's collaborate on a solution that provides a genuine competitive edge.
             </p>
             <button
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+              onClick={() => { /* Placeholder for contact form scroll or modal open */ }}
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-sky-500 to-fuchsia-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
             >
-              Start Your AI Journey
+              Start Your Project
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
