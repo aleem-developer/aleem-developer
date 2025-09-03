@@ -11,7 +11,14 @@
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-8px); }
 }
-
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-move 5s linear infinite;
+}
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
