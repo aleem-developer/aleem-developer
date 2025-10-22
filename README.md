@@ -82,5 +82,5 @@ Git | GitHub | VS Code | ChatGPT | n8n | cursor | bolt | Gemini | Grok
 
 ---
 
-> “AI isn’t magic — it’s just logic, automated beautifully.”  
-> — @aleem.developer 🧠🚀 *(Last updated: October 30, 2025)*
+> “Don’t just learn — build something the world remembers.”  
+> — @aleem.developer 
