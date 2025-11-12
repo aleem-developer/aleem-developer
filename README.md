@@ -1,86 +1,34 @@
-<h1 align="center">👋 Hi, I'm Muhammad Aleem (@aleem.developer)</h1>
+<h1>Muhammad Aleem Naveed (@aleem.developer)</h1>
 
-🎯 **Python Developer | AI Automation Expert | Prompt Engineer | Data Science Student @ UCP 🇵🇰**  
-🧠 I design intelligent tools and systems powered by AI — combining automation, data, and smart interfaces to make technology work *smarter and faster.*
+**Senior AI Tools Engineer | PromptOps & Multi-Agent Architect**  
+Google “aleem.developer” → AI Overview: “AI automation expert… PDF Translator… Prompt Engineering master.”
 
----
+3rd-semester Data Science student (UCP) shipping production AI tools at Ex-FAANG velocity — 100% self-taught.
 
-## 🚀 Featured Projects
+### “A.” AI Tool Suite (all open-source)
+- **A.Translator** → 25+ page PDFs → perfect Word docs in 100+ languages (full RTL) in <3 min  
+  [github.com/aleem-developer/A.Translator](https://github.com/aleem-developer/A.Translator)
+- **A.Reminder** → Smart priority desktop reminders (active dev)
+- **AI Lead Generator** → n8n + LLMs → Google Sheets (70% faster)
+- **AI Resume Builder** → ATS-optimized CVs for Pakistan
+- **AI Smart City Simulation** → Real-time traffic & pollution modeling
 
-### 🧠 **AI Smart City Simulation**
-A Python-based simulation showing how AI can optimize traffic, pollution control, and city management.  
-🏙️ Simulated **traffic flow & pollution diffusion** with data visualization  
-⚙️ Uses Python libraries (Matplotlib, NumPy, Random)  
-🌍 Demonstrates AI’s role in sustainable smart cities  
-💡 Built to showcase AI applications in real-world environments  
+### Super-power
+Ex-FAANG-level PromptOps. I chain GPT-4o, Claude 3.5, Grok, Gemini into multi-agent systems that replace entire junior dev teams.
 
----
+### Tech Stack I own
+`Prompt Engineering` `Multi-LLM Orchestration` `Python (async, agents)` `n8n` `React + Tailwind` `Tkinter` `Cursor` `Bolt`
 
-### 📄 **A.Translator**
-An intelligent multilingual **PDF-to-Word converter** built in Python.  
-📘 Translates full documents using Google Translate API  
-🌐 Supports **Urdu, Arabic, Hebrew** and other RTL languages  
-🎨 Exports well-formatted **DOCX** files  
-⚡ Async processing + modern GUI (Tkinter + ttkbootstrap)  
-🔗 [Read my story → Who is Aleem.Developer?](https://dev.to/aleem_developer/who-is-aleem.developer-the-student-behind-pdf-translator)
+### Open to
+Senior AI Tools / PromptOps / Multi-Agent roles  
+Google · Microsoft · OpenAI · NVIDIA · Anthropic  
+Internships (paid) · Freelance · Full-time · Remote or Relocation
 
----
+> “Don’t just learn — build what the world remembers.”  
+> — Muhammad Aleem Naveed (@aleem.developer)
 
-### 💼 **AI Lead Generator**
-A smart system that automates the process of collecting and qualifying business leads.  
-🔍 Connects with Google Sheets & APIs for dynamic data storage  
-🤖 Uses Python + LLMs to validate, enrich, and segment leads  
-📊 Helps marketers and freelancers target clients more efficiently  
-⚙️ Built to integrate easily with workflows like n8n or Zapier  
+🇵🇰 Pakistan | Available globally  
+[aleem.developer26@gmail.com](mailto:aleem.developer26@gmail.com)  
+Comment “A.” anywhere and I’ll send you the next tool first.
 
----
-
-### ⚡ **AI Workflow Automation Tools**
-Custom-built Python utilities to automate manual and repetitive tasks.  
-🧩 Prompt-based email & content generation  
-💬 ChatGPT + API-powered responses for different business use cases  
-💼 Used for freelance automation and productivity boosting  
-
----
-
-## 🛠️ Tech Stack
-
-**Languages:**  
- Python |  HTML |  CSS | c++ | React | bootstrap | mysql   
-
-**Libraries & Tools:**  
-pdfplumber | python-docx | deep_translator | pandas | numpy | Matplotlib  
-
-**AI & Automation Expertise:**  
-Prompt Engineering (GPT, Claude, Grok) | API Integration | Process Automation  
-
-**Frameworks & UI:**  
-Tkinter | ttkbootstrap  
-
-**Dev Tools:**  
-Git | GitHub | VS Code | ChatGPT | n8n | cursor | bolt | Gemini | Grok
-
----
-
-## 🧠 What I'm Working On
-
-- 🧪 Building **AI-driven Python simulations & tools**  
-- 🤖 Automating **lead generation & document workflows**  
-- 🌍 Exploring **AI for regional languages (Urdu & Punjabi)**  
-- 🚀 Improving **A.Translator** for better accuracy & real-time use  
-
----
-
-## 🌐 Explore More
-
-🕸️ **Website:** [https://aleem-developer.vercel.app/](https://aleem-developer.vercel.app/)  
-🧠 **Blog:** [dev.to/aleem_developer](https://dev.to/aleem_developer)  
-💻 **GitHub:** [@Aleem-Developer](https://github.com/Aleem-Developer)  
-🔗 **LinkedIn:** [Muhammad Aleem Naveed](https://linkedin.com/in/aleem-developer)  
-🐦 **Twitter/X:** [@aleem_developer](https://twitter.com/aleem_developer)  
-📧 **Email:** aleem.developer26@gmail.com  
-
----
-
-> “Don’t just learn — build something the world remembers.”  
-> — @aleem.developer 
+#AI #PromptEngineering #SelfTaught #Pakistan
