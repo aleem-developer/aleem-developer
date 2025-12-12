@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/src/contexts/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aleem.Developer - Top AI Prompt Engineer & Workflow Architect</title>
+  <meta name="description"
+    content="World-class prompt engineering and AI workflow architect with 5,000+ successful projects. Expert in multi-agent systems, LLM optimization, and cutting-edge AI solutions." />
+  <meta name="keywords" content="Aleem Developer, Prompt Engineer, AI Pakistan, LLM, AI Innovator, Portfolio">
+  <meta name="author" content="Muhammad Aleem Naveed">
+  <meta property="og:title" content="Aleem.Developer | Prompt Engineer">
+  <meta property="og:description" content="Portfolio of Aleem.Developer - PromptOps Engineer & AI Innovator.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com">
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+    }
+
+    /*  Premium Blue-White-Mint Loader */
+    .loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, #FFFFFF, #F1F5F9);
+      /* Pure White to Soft Grey */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.6s ease;
+    }
+
+    .loading-screen.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .orb {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: conic-gradient(#78B7FF, #2F6FED, #D9F5E5, #78B7FF);
+      /* Sky/Royal/Mint */
+      animation: spin 3.5s linear infinite, pulse 2s ease-in-out infinite;
+      box-shadow: 0 0 35px rgba(120, 183, 255, 0.4), 0 0 80px rgba(47, 111, 237, 0.2);
+      position: relative;
+    }
+
+    /* Orbiting rings */
+    .orb::before,
+    .orb::after {
+      content: "";
+      position: absolute;
+      border: 2px solid rgba(120, 183, 255, 0.6);
+      /* Sky Blue */
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      top: -25px;
+      left: -25px;
+      animation: orbit 6s linear infinite;
+    }
+
+    .orb::after {
+      width: 180px;
+      height: 180px;
+      top: -45px;
+      left: -45px;
+      border-color: rgba(76, 187, 168, 0.4);
+      /* Teal Accent */
+      animation: orbit 8s linear infinite reverse;
+    }
+
+    /* Particles */
+    .particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .particle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #78B7FF;
+      /* Sky Blue */
+      border-radius: 50%;
+      animation: floatUp 4s linear infinite;
+      opacity: 0.7;
+    }
+
+    .particle:nth-child(2) {
+      left: 30%;
+      animation-duration: 5s;
+      background: #2F6FED;
+    }
+
+    /* Royal Blue */
+    .particle:nth-child(3) {
+      left: 70%;
+      animation-duration: 6s;
+      background: #4CBBA8;
+    }
+
+    /* Teal */
+    .particle:nth-child(4) {
+      left: 50%;
+      animation-duration: 4.5s;
+      background: #D9F5E5;
+    }
+
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 35px rgba(139, 92, 246, 0.9);
+      }
+
+      50% {
+        transform: scale(1.15);
+        box-shadow: 0 0 80px rgba(59, 130, 246, 1);
+      }
+    }
+
+    @keyframes orbit {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(-20px) scale(1);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Loader -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="orb"></div>
+    <div class="particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+  </div>
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const screen = document.getElementById('loading-screen');
+        if (screen) {
+          screen.classList.add('fade-out');
+          setTimeout(() => screen.remove(), 600);
+        }
+      }, 1000); // keep loader ~1s
+    });
+  </script>
+</body>
+
+</html>

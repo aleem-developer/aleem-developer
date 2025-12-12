@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-100 antialiased;
+    background-image: linear-gradient(135deg, #FFFFFF, #E9F4FF, #D9F5E5);
+    background-attachment: fixed;
+  }
+}

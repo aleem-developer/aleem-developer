@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aleem.developer/sitemap.xml
+
+# Specific instructions for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block unnecessary crawling
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /tmp/
+
+# Crawl delay (optional)
+Crawl-delay: 1
