@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
           <span className="whitespace-nowrap text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Aleem.Developer
+            Aleem.developer
           </span>
 
           {/* Desktop nav */}
