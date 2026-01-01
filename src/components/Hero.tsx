@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight animate-slide-up p-2">
           <span className="block text-gray-100">Muhammad Aleem Naveed</span>
           <span className="block text-gray-300 text-base sm:text-lg mt-1">
-            @Aleem.Developer | Top 2 Prompt Engineer Pakistan | Top 1–2% Globally | Python Dev | Real-World AI Practitioner
+          @Aleem.Developer | AI Prompt Engineer | Video Generation & Dev Tool Prompts | Cursor, LLM Workflows | Applied AI Specialist
   </span>
           <span className="block bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500 bg-clip-text text-transparent mt-2 p-3">
             AI, Python & Prompt Engineering Mastery
