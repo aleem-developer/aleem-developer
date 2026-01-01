@@ -38,8 +38,8 @@ const App = () => {
               </span>
             </h2>
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              I’m <span className="font-semibold text-blue-500">@aleem.developer</span> — globally recognized as one of the top prompt engineers.  
-              I’m a self-taught AI innovator with deep expertise in Python, prompt engineering, and AI problem-solving. I don’t just use AI — I understand it, master it, and guide others to do the same.
+              I’m <span className="font-semibold text-blue-500">@aleem.developer</span> —   
+              a self-taught AI innovator with deep expertise in Python, prompt engineering, and AI problem-solving. I don’t just use AI — I understand it, master it, and guide others to do the same.
             </p>
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mt-3">
               I approach AI and coding with a precision-driven, hands-on methodology, always pushing boundaries, thinking ahead, and building solutions that are practical, scalable, and intelligent.
