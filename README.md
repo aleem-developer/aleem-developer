@@ -1,8 +1,8 @@
 <h1>Muhammad Aleem Naveed (@aleem.developer)</h1>
 
-**Top Prompt Engineer | Python Specialist | AI Practitioner & Mentor**  
+** Prompt Engineer | Python Specialist | AI Practitioner & Mentor**  
 
-I’m Aleem.Developer — globally recognized as one of the **top prompt engineers**, ranked among the **#1–2 in Pakistan** and **top percentile worldwide**. I’m a self-taught AI innovator with deep expertise in **Python, prompt engineering, and AI problem-solving**. I don’t just use AI — I understand it, master it, and guide others to do the same.  
+I’m Aleem.Developer — a self-taught AI innovator with deep expertise in **Python, prompt engineering, and AI problem-solving**. I don’t just use AI — I understand it, master it, and guide others to do the same.  
 
 I approach AI and coding with a **precision-driven, hands-on methodology**, always pushing boundaries, thinking ahead, and building solutions that are **practical, scalable, and intelligent**. My work reflects **speed, accuracy, and technical excellence**, outpacing conventional approaches and setting new standards.  
 
