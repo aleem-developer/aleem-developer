@@ -7,12 +7,12 @@ const Services = () => {
       icon: <Brain className="w-12 h-12" />,
       title: "Prompt Engineering & LLM Optimization",
       description:
-        "I craft high-precision prompts for GPT, Claude, and other LLMs to deliver predictable, business-ready AI outputs — saving you time, credits, and effort.",
+        "I craft high-precision prompts for GPT, Claude, and other LLMs to deliver predictable, business-ready AI outputs — saving you time, credits, and effort while maximizing productivity.",
       features: [
-        "Advanced prompt design for exact results",
-        "Context & state management in AI workflows",
-        "Chain-of-thought & multi-agent prompts",
-        "LLM performance tuning & optimization",
+        "Advanced prompt design for exact, reliable results",
+        "Context & state management for complex AI workflows",
+        "Chain-of-thought & multi-agent prompt strategies",
+        "LLM performance tuning & optimization for speed & accuracy",
       ],
       color: "from-fuchsia-500 to-pink-600",
     },
@@ -20,12 +20,12 @@ const Services = () => {
       icon: <Layers className="w-12 h-12" />,
       title: "Full-Stack AI-Powered Web Apps",
       description:
-        "I build intelligent, scalable web applications integrated with AI solutions for automating tasks, generating content, or powering data-driven tools.",
+        "I build intelligent, scalable web applications integrated with AI solutions that automate workflows, generate content, and deliver actionable insights for businesses.",
       features: [
-        "Custom web app development (React/Next.js)",
-        "Backend APIs & Python integrations",
-        "Database design & architecture",
-        "Deployment & performance optimization",
+        "Custom web app development (React/Next.js) tailored to AI integration",
+        "Backend APIs & Python integrations for seamless automation",
+        "Database design & architecture for performance and scalability",
+        "Deployment & performance optimization for enterprise-ready apps",
       ],
       color: "from-sky-500 to-indigo-600",
     },
@@ -33,22 +33,22 @@ const Services = () => {
       icon: <Lightbulb className="w-12 h-12" />,
       title: "AI & Web Consulting",
       description:
-        "I provide actionable strategies to implement AI, optimize prompt workflows, and accelerate business growth with digital solutions.",
+        "I provide actionable strategies to implement AI effectively, optimize workflows, and accelerate business growth — transforming ideas into measurable outcomes.",
       features: [
-        "AI solution strategy & workflow planning",
-        "Tech stack consulting",
-        "Project roadmap & implementation guidance",
-        "ROI-focused AI recommendations",
+        "AI solution strategy & workflow planning for maximum ROI",
+        "Tech stack consulting to leverage the latest tools",
+        "Project roadmap & implementation guidance for efficiency",
+        "ROI-focused AI recommendations to grow revenue & save resources",
       ],
       color: "from-orange-500 to-yellow-500",
     },
   ];
 
   const specializations = [
-    { icon: <Brain className="w-8 h-8" />, title: "Prompt Engineering", description: "Custom prompts for content automation & workflows." },
-    { icon: <Rocket className="w-8 h-8" />, title: "Python Web Development", description: "Scalable backends & API integrations." },
-    { icon: <Lightbulb className="w-8 h-8" />, title: "AI & Web Strategy", description: "Client-focused roadmap & workflow optimization." },
-    { icon: <Rocket className="w-8 h-8" />, title: "Learning New AI Tools", description: "Rapid adaptation and mastery of AI technologies." },
+    { icon: <Brain className="w-8 h-8" />, title: "Prompt Engineering", description: "Custom prompts for automation, workflows, and predictable AI outputs." },
+    { icon: <Rocket className="w-8 h-8" />, title: "Python Web Development", description: "Scalable backends & API integrations to power AI-driven apps." },
+    { icon: <Lightbulb className="w-8 h-8" />, title: "AI & Web Strategy", description: "Client-focused roadmap & workflow optimization for tangible results." },
+    { icon: <Rocket className="w-8 h-8" />, title: "Learning New AI Tools", description: "Rapid adaptation and mastery of emerging AI technologies." },
   ];
 
   return (
@@ -62,10 +62,10 @@ const Services = () => {
         {/* Header */}
         <div className="text-center mb-20 animate-slide-up">
           <h2 className="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight">
-            Hire Me for <span className="bg-gradient-to-r from-sky-500 to-fuchsia-500 bg-clip-text text-transparent">Prompt Engineering & AI Solutions</span>
+            Hire Me for <span className="bg-gradient-to-r from-sky-500 to-fuchsia-500 bg-clip-text text-transparent">AI & Prompt Solutions</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            I help creators, startups, and businesses unlock the full power of AI with precision prompt engineering, scalable web apps, and actionable AI strategies.
+            I help creators, startups, and businesses unlock the full potential of AI with precision prompt engineering, scalable web apps, and actionable strategies that save time, money, and effort.
           </p>
         </div>
 
@@ -98,7 +98,7 @@ const Services = () => {
                   href="mailto:aleem.developer26@gmail.com"
                   className="inline-block mt-6 px-6 py-2 bg-sky-500 text-white rounded-xl font-semibold hover:bg-sky-600 transition-colors duration-300"
                 >
-                  Hire Me
+                  Hire Me Now
                 </a>
               </div>
             </div>
@@ -110,7 +110,7 @@ const Services = () => {
           <div className="text-center mb-12 animate-slide-up">
             <h3 className="text-3xl lg:text-4xl font-bold mb-4">Core Technical Specializations</h3>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              These are the areas where I deliver client-ready AI & web solutions that generate real results.
+              These are the areas where I deliver client-ready AI & web solutions that produce real business impact.
             </p>
           </div>
 
