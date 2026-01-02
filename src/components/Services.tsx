@@ -4,51 +4,51 @@ import { Brain, Lightbulb, Layers, Rocket } from "lucide-react";
 const Services = () => {
   const services = [
     {
+      icon: <Brain className="w-12 h-12" />,
+      title: "Prompt Engineering & LLM Optimization",
+      description:
+        "I craft high-precision prompts for GPT, Claude, and other LLMs to deliver predictable, business-ready AI outputs — saving you time, credits, and effort.",
+      features: [
+        "Advanced prompt design for exact results",
+        "Context & state management in AI workflows",
+        "Chain-of-thought & multi-agent prompts",
+        "LLM performance tuning & optimization",
+      ],
+      color: "from-fuchsia-500 to-pink-600",
+    },
+    {
       icon: <Layers className="w-12 h-12" />,
       title: "Full-Stack AI-Powered Web Apps",
       description:
-        "I build scalable, intelligent web applications from scratch using modern frameworks and AI integrations for high-impact results.",
+        "I build intelligent, scalable web applications integrated with AI solutions for automating tasks, generating content, or powering data-driven tools.",
       features: [
         "Custom web app development (React/Next.js)",
-        "Backend API integration (Python)",
+        "Backend APIs & Python integrations",
         "Database design & architecture",
         "Deployment & performance optimization",
       ],
       color: "from-sky-500 to-indigo-600",
     },
     {
-      icon: <Brain className="w-12 h-12" />,
-      title: "Prompt Engineering & LLM Optimization",
-      description:
-        "Crafting precise and advanced prompts to maximize LLM efficiency, accuracy, and output quality for your business or projects.",
-      features: [
-        "Advanced prompt design",
-        "Context & state engineering",
-        "Chain-of-thought prompting",
-        "LLM performance tuning",
-      ],
-      color: "from-fuchsia-500 to-pink-600",
-    },
-    {
       icon: <Lightbulb className="w-12 h-12" />,
       title: "AI & Web Consulting",
       description:
-        "Strategic guidance to implement AI and web solutions effectively, providing clear roadmaps for businesses to innovate and scale.",
+        "I provide actionable strategies to implement AI, optimize prompt workflows, and accelerate business growth with digital solutions.",
       features: [
-        "AI solution strategy",
-        "Technology stack consulting",
-        "Project roadmap & guidance",
-        "ROI-focused recommendations",
+        "AI solution strategy & workflow planning",
+        "Tech stack consulting",
+        "Project roadmap & implementation guidance",
+        "ROI-focused AI recommendations",
       ],
       color: "from-orange-500 to-yellow-500",
     },
   ];
 
   const specializations = [
-    { icon: <Rocket className="w-8 h-8" />, title: "Python Web Dev", description: "Efficient and scalable backends." },
-    { icon: <Brain className="w-8 h-8" />, title: "LLMs & Prompt Engineering", description: "Advanced AI-driven solutions." },
-    { icon: <Lightbulb className="w-8 h-8" />, title: "AI & Web Strategy", description: "Expert consulting for digital growth." },
-    { icon: <Rocket className="w-8 h-8" />, title: "Learning New AI Tools", description: "Quickly adapt and master new AI technologies." },
+    { icon: <Brain className="w-8 h-8" />, title: "Prompt Engineering", description: "Custom prompts for content automation & workflows." },
+    { icon: <Rocket className="w-8 h-8" />, title: "Python Web Development", description: "Scalable backends & API integrations." },
+    { icon: <Lightbulb className="w-8 h-8" />, title: "AI & Web Strategy", description: "Client-focused roadmap & workflow optimization." },
+    { icon: <Rocket className="w-8 h-8" />, title: "Learning New AI Tools", description: "Rapid adaptation and mastery of AI technologies." },
   ];
 
   return (
@@ -62,10 +62,10 @@ const Services = () => {
         {/* Header */}
         <div className="text-center mb-20 animate-slide-up">
           <h2 className="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight">
-            Premium <span className="bg-gradient-to-r from-sky-500 to-fuchsia-500 bg-clip-text text-transparent">AI & Web Solutions</span>
+            Hire Me for <span className="bg-gradient-to-r from-sky-500 to-fuchsia-500 bg-clip-text text-transparent">Prompt Engineering & AI Solutions</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            I engineer high-impact solutions combining AI, prompt engineering, and full-stack web development — so your ideas become real, functional, and scalable.
+            I help creators, startups, and businesses unlock the full power of AI with precision prompt engineering, scalable web apps, and actionable AI strategies.
           </p>
         </div>
 
@@ -93,6 +93,13 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
+                {/* Call-to-action */}
+                <a
+                  href="mailto:aleem.developer26@gmail.com"
+                  className="inline-block mt-6 px-6 py-2 bg-sky-500 text-white rounded-xl font-semibold hover:bg-sky-600 transition-colors duration-300"
+                >
+                  Hire Me
+                </a>
               </div>
             </div>
           ))}
@@ -103,7 +110,7 @@ const Services = () => {
           <div className="text-center mb-12 animate-slide-up">
             <h3 className="text-3xl lg:text-4xl font-bold mb-4">Core Technical Specializations</h3>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Leveraging a focused stack of skills and tools to deliver robust and future-proof AI & web solutions.
+              These are the areas where I deliver client-ready AI & web solutions that generate real results.
             </p>
           </div>
 
