@@ -1,4 +1,5 @@
-import { Brain, Lightbulb, Layers, Rocket } from 'lucide-react';
+import React from "react";
+import { Brain, Lightbulb, Layers, Rocket } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -6,7 +7,7 @@ const Services = () => {
       icon: <Layers className="w-12 h-12" />,
       title: "Full-Stack AI-Powered Web Apps",
       description:
-        "Build scalable, intelligent web applications from scratch using modern full-stack frameworks and AI integrations for high-impact solutions.",
+        "I build scalable, intelligent web applications from scratch using modern frameworks and AI integrations for high-impact results.",
       features: [
         "Custom web app development (React/Next.js)",
         "Backend API integration (Python)",
@@ -19,7 +20,7 @@ const Services = () => {
       icon: <Brain className="w-12 h-12" />,
       title: "Prompt Engineering & LLM Optimization",
       description:
-        "Craft precise and advanced prompts to maximize LLM efficiency, accuracy, and output quality for your business or projects.",
+        "Crafting precise and advanced prompts to maximize LLM efficiency, accuracy, and output quality for your business or projects.",
       features: [
         "Advanced prompt design",
         "Context & state engineering",
@@ -32,7 +33,7 @@ const Services = () => {
       icon: <Lightbulb className="w-12 h-12" />,
       title: "AI & Web Consulting",
       description:
-        "Strategic guidance to implement AI and web solutions effectively. I provide clear roadmaps for businesses looking to innovate and scale.",
+        "Strategic guidance to implement AI and web solutions effectively, providing clear roadmaps for businesses to innovate and scale.",
       features: [
         "AI solution strategy",
         "Technology stack consulting",
@@ -51,7 +52,8 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="bg-gray-950 text-white py-16 font-inter overflow-hidden relative">
+    <section id="services" className="bg-gray-950 text-white py-20 font-inter relative overflow-hidden">
+      {/* Background Gradient */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-tr from-blue-900 via-purple-900 to-green-900 opacity-20 blur-3xl animate-gradientBackground"></div>
       </div>
@@ -62,8 +64,8 @@ const Services = () => {
           <h2 className="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight">
             Premium <span className="bg-gradient-to-r from-sky-500 to-fuchsia-500 bg-clip-text text-transparent">AI & Web Solutions</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            I engineer high-impact solutions that combine advanced AI, prompt engineering, and full-stack web development.
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            I engineer high-impact solutions combining AI, prompt engineering, and full-stack web development — so your ideas become real, functional, and scalable.
           </p>
         </div>
 
@@ -74,6 +76,7 @@ const Services = () => {
               key={index}
               className="group relative bg-gray-900 rounded-3xl p-10 border border-gray-800 shadow-xl overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
             >
+              {/* Gradient Glow */}
               <div className={`absolute inset-0 z-0 opacity-10 blur-xl group-hover:opacity-30 transition-opacity duration-500 bg-gradient-to-r ${service.color}`}></div>
 
               <div className="relative z-10">
@@ -99,8 +102,8 @@ const Services = () => {
         <div className="bg-gray-900 rounded-3xl p-10 lg:p-16 border border-gray-800 shadow-xl">
           <div className="text-center mb-12 animate-slide-up">
             <h3 className="text-3xl lg:text-4xl font-bold mb-4">Core Technical Specializations</h3>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              I leverage a focused stack of skills and tools to deliver robust and future-proof solutions.
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              Leveraging a focused stack of skills and tools to deliver robust and future-proof AI & web solutions.
             </p>
           </div>
 
