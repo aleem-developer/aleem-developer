@@ -13,7 +13,7 @@ const Testimonials = () => {
       company: "China University",
       image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=300",
       content:
-        "I was struggling with my AI projects until Aleem guided me. He didn’t overcomplicate things — he gave me a few refined prompts I was missing, and the results shocked me. My entire approach changed.",
+        "I was struggling with AI projects until Aleem guided me. He gave me precise prompts and actionable strategies — the results were transformative. My approach changed completely.",
       rating: 5,
       project: "Prompt Clarity Guidance",
       results: "Breakthrough in AI coursework"
@@ -25,7 +25,7 @@ const Testimonials = () => {
       company: "Riza Technologies",
       image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300",
       content:
-        "I hit a roadblock in my product — nothing seemed to work. Aleem stepped in, identified exactly what I was missing, and shared a couple of prompt strategies that fixed the issue instantly. His clarity is unmatched.",
+        "My product was stuck until Aleem analyzed the problem and provided a couple of prompt strategies. Instant fixes, clear guidance, and precise outcomes. His clarity is unmatched.",
       rating: 5,
       project: "Product Prompt Debugging",
       results: "Instant issue resolution"
@@ -37,7 +37,7 @@ const Testimonials = () => {
       company: "Independent Creator",
       image: "https://images.pexels.com/photos/1181742/pexels-photo-1181742.jpeg?auto=compress&cs=tinysrgb&w=300",
       content:
-        "I thought my prompt was good… until Aleem rewrote it. The difference was unbelievable. He understands models at a level I’ve never seen before.",
+        "I thought my prompts were good… until Aleem rewrote them. The difference was staggering. He understands AI models at a level I’ve never seen before.",
       rating: 5,
       project: "Prompt Optimization",
       results: "Massively improved output"
@@ -49,7 +49,7 @@ const Testimonials = () => {
       company: "Self-Learner",
       image: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=300",
       content:
-        "Aleem doesn’t give generic advice. He explains why the model behaves the way it does, then gives you the exact prompt formula you should use. One conversation improved all my outputs.",
+        "Aleem doesn’t give generic advice. He explains AI behavior and provides exact prompt formulas. One conversation improved all my outputs and consistency.",
       rating: 5,
       project: "Prompt Formula Coaching",
       results: "Better consistency across prompts"
@@ -92,6 +92,7 @@ const Testimonials = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight">
             Client <span className="bg-gradient-to-r from-sky-500 to-fuchsia-500 bg-clip-text text-transparent">Success Stories</span>
@@ -101,6 +102,7 @@ const Testimonials = () => {
           </p>
         </div>
 
+        {/* Testimonial Card */}
         <div className="max-w-4xl mx-auto relative">
           <div
             className={`relative p-8 lg:p-12 rounded-3xl overflow-hidden bg-white/5 backdrop-blur-lg border border-white/10 shadow-2xl transition-all duration-500 transform hover:scale-[1.02] ${
@@ -111,7 +113,7 @@ const Testimonials = () => {
 
             <div className="relative z-10 flex flex-col items-center text-center">
               <Quote className="w-12 h-12 text-white/50 mb-6" />
-              <blockquote className="text-xl lg:text-2xl font-medium mb-8 leading-relaxed text-gray-200">
+              <blockquote className="text-xl lg:text-2xl font-medium mb-6 leading-relaxed text-gray-200">
                 "{currentTest.content}"
               </blockquote>
 
@@ -128,14 +130,22 @@ const Testimonials = () => {
                 </div>
               </div>
 
+              {/* Rating */}
               <div className="flex justify-center mt-4 space-x-1">
                 {[...Array(currentTest.rating)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-current text-yellow-400 animate-pulse-slow" />
                 ))}
               </div>
+
+              {/* Project & Result */}
+              <div className="mt-6 text-gray-300 text-sm">
+                <div><strong>Project:</strong> {currentTest.project}</div>
+                <div><strong>Outcome:</strong> {currentTest.results}</div>
+              </div>
             </div>
           </div>
 
+          {/* Navigation */}
           <div className="flex justify-center items-center mt-10 space-x-6">
             <button
               onClick={prevTestimonial}
@@ -168,6 +178,7 @@ const Testimonials = () => {
         </div>
       </div>
 
+      {/* Animations */}
       <style>{`
         @keyframes gradientBackground {
           0% { background-position: 0% 50%; }
