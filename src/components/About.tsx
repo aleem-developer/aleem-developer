@@ -31,14 +31,14 @@ const App = () => {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
           {/* Heading */}
           <div className="text-center mb-16 animate-slide-up">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-black mb-5">
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-5">
               About{" "}
               <span className="bg-gradient-to-r from-sky-500 to-blue-400 bg-clip-text text-transparent">
                 Me
               </span>
             </h2>
 
-            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
               I’m{" "}
               <span className="font-semibold text-blue-500">
                 @aleem.developer
@@ -48,14 +48,14 @@ const App = () => {
               without wasting time, credits, or money.
             </p>
 
-            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mt-3">
+            <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed mt-3">
               I specialize in crafting <strong>high-precision prompts</strong>{" "}
               for video generation tools, developer environments like{" "}
               <strong>Cursor</strong>, and advanced LLM workflows — turning AI
               tools into predictable, controllable systems.
             </p>
 
-            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mt-3">
+            <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed mt-3">
               My approach is practical and results-driven: understand the goal,
               engineer the prompt logic, optimize iterations, and deliver
               outputs that meet real-world requirements — not random guesses.
@@ -150,10 +150,10 @@ const App = () => {
                     <Brain className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                    <h3 className="text-xl font-semibold text-white">
                       AI & Prompt Engineering
                     </h3>
-                    <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                    <p className="mt-2 text-gray-300 text-sm leading-relaxed">
                       Designing structured, high-accuracy prompts that produce
                       consistent results across video generation models,
                       LLMs, and creative AI tools.
@@ -168,10 +168,10 @@ const App = () => {
                     <Code2 className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                    <h3 className="text-xl font-semibold text-white">
                       Python & Dev Tools
                     </h3>
-                    <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                    <p className="mt-2 text-gray-300 text-sm leading-relaxed">
                       Applying prompt engineering inside developer workflows,
                       automation, and tools like Cursor to improve speed,
                       accuracy, and output quality.
@@ -186,10 +186,10 @@ const App = () => {
                     <Zap className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                    <h3 className="text-xl font-semibold text-white">
                       Guidance & Optimization
                     </h3>
-                    <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                    <p className="mt-2 text-gray-300 text-sm leading-relaxed">
                       Helping creators and professionals avoid wasted credits
                       and poor results by optimizing prompts for their exact
                       use case.
@@ -224,7 +224,7 @@ const App = () => {
   function ParallaxCard({ children }: ParallaxCardProps) {
     return (
       <div className="group [perspective:1000px]">
-        <div className="rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 shadow-lg transition-all duration-300 p-6
+        <div className="rounded-2xl bg-white/10 backdrop-blur-sm border border-gray-200/50 shadow-lg transition-all duration-300 p-6
                         hover:shadow-2xl hover:-translate-y-1
                         group-hover:[transform:rotateX(6deg)_rotateY(-6deg)]">
           {children}
