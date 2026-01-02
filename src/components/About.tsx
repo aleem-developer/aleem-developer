@@ -44,7 +44,7 @@ const App = () => {
                 @aleem.developer
               </span>{" "}
               — an <strong>AI Prompt Engineer</strong> who helps creators,
-              developers, and teams get <strong>exact results</strong> from AI
+              startups, and teams get <strong>precise, business-ready AI results</strong> 
               without wasting time, credits, or money.
             </p>
 
@@ -52,19 +52,19 @@ const App = () => {
               I specialize in crafting <strong>high-precision prompts</strong>{" "}
               for video generation tools, developer environments like{" "}
               <strong>Cursor</strong>, and advanced LLM workflows — turning AI
-              tools into predictable, controllable systems.
+              tools into predictable, controllable, and profitable systems.
             </p>
 
             <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed mt-3">
-              My approach is practical and results-driven: understand the goal,
-              engineer the prompt logic, optimize iterations, and deliver
-              outputs that meet real-world requirements — not random guesses.
+              My approach is practical and results-driven: understand your goal,
+              engineer prompt logic, optimize iterations, and deliver outputs
+              that meet real-world business requirements — no guesswork.
             </p>
           </div>
 
           {/* Grid: Orbit + Cards */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-            {/* Orbit visual */}
+            {/* Orbit visual (skills ferris wheel, do not change layout) */}
             <div className="relative mx-auto w-[320px] h-[320px] sm:w-[380px] sm:h-[380px]">
               {/* Glow */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500/30 via-sky-400/25 to-blue-300/30 blur-2xl" />
@@ -154,9 +154,8 @@ const App = () => {
                       AI & Prompt Engineering
                     </h3>
                     <p className="mt-2 text-gray-300 text-sm leading-relaxed">
-                      Designing structured, high-accuracy prompts that produce
-                      consistent results across video generation models,
-                      LLMs, and creative AI tools.
+                      I design structured, high-accuracy prompts that produce
+                      consistent, business-ready results for video, text, and LLM-based AI tools.
                     </p>
                   </div>
                 </div>
@@ -172,9 +171,7 @@ const App = () => {
                       Python & Dev Tools
                     </h3>
                     <p className="mt-2 text-gray-300 text-sm leading-relaxed">
-                      Applying prompt engineering inside developer workflows,
-                      automation, and tools like Cursor to improve speed,
-                      accuracy, and output quality.
+                      I implement prompt engineering inside developer workflows and tools like Cursor to improve speed, accuracy, and output quality.
                     </p>
                   </div>
                 </div>
@@ -190,9 +187,7 @@ const App = () => {
                       Guidance & Optimization
                     </h3>
                     <p className="mt-2 text-gray-300 text-sm leading-relaxed">
-                      Helping creators and professionals avoid wasted credits
-                      and poor results by optimizing prompts for their exact
-                      use case.
+                      I help creators and businesses avoid wasted credits and poor results by optimizing prompts and AI workflows for their exact needs.
                     </p>
                   </div>
                 </div>
