@@ -31,7 +31,7 @@ const App = () => {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
           {/* Heading */}
           <div className="text-center mb-16 animate-slide-up">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-5">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-black mb-5">
               About{" "}
               <span className="bg-gradient-to-r from-sky-500 to-blue-400 bg-clip-text text-transparent">
                 Me
