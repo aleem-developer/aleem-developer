@@ -4,8 +4,8 @@ import { ArrowRight } from "lucide-react";
 const skills = [
   { name: "AI Video Prompt Optimization", value: 90, colors: ["#3b82f6", "#60a5fa"] },
   { name: "Dev Tool Prompt Tuning (Cursor)", value: 85, colors: ["#2563eb", "#93c5fd"] },
-  { name: "LLM Workflow Understanding", value: 88, colors: ["#1d4ed8", "#93c5fd"] },
-  { name: "Rapid Model & Tool Adaptation", value: 92, colors: ["#3b82f6", "#93c5fd"] },
+  { name: "LLM Workflow Design & Automation", value: 88, colors: ["#1d4ed8", "#93c5fd"] },
+  { name: "Rapid AI Tool Adaptation", value: 92, colors: ["#3b82f6", "#93c5fd"] },
 ];
 
 const Hero: React.FC = () => {
@@ -28,14 +28,13 @@ const Hero: React.FC = () => {
             @Aleem.Developer | AI Prompt Engineer | Video & Dev Tool Optimization
           </span>
           <span className="block bg-gradient-to-r from-blue-500 via-purple-500 to-emerald-500 bg-clip-text text-transparent mt-2 p-3">
-            Get Usable AI Outputs in Fewer Runs
+            Get Predictable, Business-Ready AI Outputs in Fewer Runs
           </span>
         </h1>
 
         <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed animate-slide-up">
-          I help creators and developers using AI tools get the results they want
-          <span className="text-blue-400 font-semibold"> without wasting credits on failed generations</span>,
-          by engineering prompts aligned with how models actually interpret instructions.
+          I help creators, startups, and businesses <span className="text-blue-400 font-semibold">get exact AI results without wasting credits or time</span>. 
+          Using precise prompt engineering, I make AI tools like GPT, Claude, Grok, and video generation systems predictable and usable.
         </p>
 
         <div className="flex justify-center mt-8 animate-slide-up">
@@ -43,7 +42,7 @@ const Hero: React.FC = () => {
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
           >
-            Optimize My Prompt
+            Hire Me for Prompt Engineering
             <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
           </button>
         </div>
