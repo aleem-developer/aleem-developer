@@ -137,3 +137,58 @@ const App = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                      Python Development
+                    </h3>
+                    <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                      Building clean, scalable Python systems for AI
+                      automation, backend intelligence, and real-world
+                      deployment.
+                    </p>
+                  </div>
+                </div>
+              </ParallaxCard>
+
+              <ParallaxCard>
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-2xl bg-blue-500/10 text-blue-600 dark:text-blue-400">
+                    <Zap className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                      Strategy & Mentorship
+                    </h3>
+                    <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                      Guiding developers, founders, and teams to understand AI
+                      deeply — from prompt logic to system design — so they can
+                      build with confidence, not guesswork.
+                    </p>
+                  </div>
+                </div>
+              </ParallaxCard>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  interface ParallaxCardProps {
+    children: React.ReactNode;
+  }
+
+  function ParallaxCard({ children }: ParallaxCardProps) {
+    return (
+      <div className="group [perspective:1000px]">
+        <div className="rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 shadow-lg transition-all duration-300 p-6
+          hover:shadow-2xl hover:-translate-y-1
+          group-hover:[transform:rotateX(6deg)_rotateY(-6deg)]">
+          {children}
+        </div>
+      </div>
+    );
+  }
+
+  return <About />;
+};
+
+export default App;
