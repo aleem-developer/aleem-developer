@@ -103,7 +103,6 @@ const SEOHead: React.FC = () => {
       <title>
         Aleem.Developer – Prompt Engineer for Video & Dev AI Tools
       </title>
-     <link rel="icon" href="../contexts/favicon.ico" />
       <meta
         name="description"
         content="Hire a freelance Prompt Engineer and Python Developer. Aleem.Developer helps improve AI outputs with well-crafted prompts and builds practical Python solutions."
