@@ -101,7 +101,7 @@ const SEOHead: React.FC = () => {
     <Helmet>
       {/* CLIENT-FOCUSED SEO */}
       <title>
-        Hire a Prompt Engineer & Python Developer | Aleem.Developer
+        Aleem.Developer – Prompt Engineer for Video & Dev AI Tools
       </title>
 
       <meta
